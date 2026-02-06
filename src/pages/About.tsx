@@ -1,3 +1,4 @@
+import cvFile from "../assets/Cv getayawkal.pdf";
 import {
   FaGithub,
   FaLinkedin,
@@ -13,13 +14,18 @@ const About = () => {
       {/* Hero / Intro */}
       <section className="hero small-hero">
         <div className="hero-content">
-          <h1 className="hero-title">Getayawkal Girma</h1>
-          <h2 className="hero-subtitle">Full-Stack & AI Software Developer</h2>
-          <p className="hero-description">
-            Building intelligent environments and efficient enterprise
-            solutions.
+          <h1 className="hero-title animate-blur-in">Getayawkal Girma</h1>
+          <h2 className="hero-subtitle animate-blur-in delay-100">
+            Full-Stack & AI Software Developer
+          </h2>
+          <p className="hero-description animate-blur-in delay-200">
+            I’m a full-stack developer passionate about building scalable,
+            high-performance applications and AI-powered systems. I enjoy
+            spotting gaps and inefficiencies in workflows and designing software
+            solutions that simplify complex operations.
           </p>
-          <div className="social-links">
+
+          <div className="social-links animate-blur-in delay-300">
             <a
               href="https://github.com/GetayawkalGirma"
               target="_blank"
@@ -44,6 +50,18 @@ const About = () => {
             </a>
           </div>
         </div>
+        <div
+          className="hero-actions animate-blur-in delay-400"
+          style={{ marginTop: "1.5rem", marginBottom: "1.5rem" }}
+        >
+          <a
+            href={cvFile}
+            download="Getayawkal_Girma_CV.pdf"
+            className="btn btn-small btn-outline"
+          >
+            Get CV
+          </a>
+        </div>
       </section>
 
       {/* Main Bio Content */}
@@ -57,8 +75,9 @@ const About = () => {
               </div>
               <h4>Enterprise Systems</h4>
               <p>
-                Lead developer on Ministry of Health CPMS using Frappe/ERPNext,
-                delivering Primavera-style project management.
+                Worked on various government apps for CPMS and IMIS that have
+                different modules including research, file, office, and workflow
+                management.
               </p>
             </div>
 
@@ -301,11 +320,13 @@ const About = () => {
             <div className="skill-group">
               <h4>Stack</h4>
               <div className="tags">
+                <span>.NET</span>
+                <span>Angular</span>
+                <span>FastAPI</span>
+                <span>Frappe</span>
+                <span>Ionic</span>
                 <span>React</span>
                 <span>React Native</span>
-                <span>FastAPI</span>
-                <span>Angular</span>
-                <span>.NET</span>
               </div>
             </div>
             <div className="skill-group">
