@@ -337,6 +337,7 @@ const About = () => {
                 <span>SQLite</span>
                 <span>PostgreSQL</span>
                 <span>Frappe</span>
+                <span>Erp Next</span>
               </div>
             </div>
           </div>

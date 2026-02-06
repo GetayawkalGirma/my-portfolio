@@ -166,37 +166,37 @@ const Projects = () => {
                     SMS, PDF, and XML bank receipts (CBE, Telebirr, BoA) into a
                     structured SQLite database.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     By storing all transactions locally, Mezgeb can eliminate up
                     to 10 million old receipt server requests per month for a
                     mid-sized bank if fully adopted.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     Implemented 40+ regex patterns for multilingual
                     (English/Amharic) parsing, achieving 98% accuracy on 4,000+
                     real receipts.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     Engineered ultra-fast query logic capable of loading
                     thousands of receipts in milliseconds, maintaining smooth
                     performance even on low-end Android devices.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     Designed a modular architecture with 9 services and 72
                     source files (7.8K+ LOC) following clean architecture and
                     dependency injection principles.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     Created interactive analytics dashboards with Chart.js,
                     providing spending insights and visual breakdowns by
                     category.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     Integrated a custom Capacitor native plugin to bypass
                     SSL/CORS issues for PDF parsing, enabling seamless
                     enrichment workflows.
                   </li>
-                  <li>
+                  <li className="custom-bullet-green">
                     Automated updates and releases via GitHub Actions for
                     continuous delivery.
                   </li>
@@ -221,7 +221,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="link-btn"
                   >
-                    Install / Download <FaExternalLinkAlt />
+                    Download <FaExternalLinkAlt />
                   </a>
                 </div>
               </div>
