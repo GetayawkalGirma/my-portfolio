@@ -23,11 +23,41 @@ function App() {
     );
   }, [darkMode]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "home",
+        "about",
+        "experience",
+        "projects",
+        "skills",
+        "contact",
+      ];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (
+          element &&
+          element.offsetTop <= scrollPosition &&
+          element.offsetTop + element.offsetHeight > scrollPosition
+        ) {
+          setActiveSection(section);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setMenuOpen(false);
+      setActiveSection(sectionId);
     }
   };
 
@@ -47,22 +77,52 @@ function App() {
 
           <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
             <li>
-              <a onClick={() => scrollToSection("home")}>Home</a>
+              <a
+                onClick={() => scrollToSection("home")}
+                className={activeSection === "home" ? "active-link" : ""}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("about")}>About</a>
+              <a
+                onClick={() => scrollToSection("about")}
+                className={activeSection === "about" ? "active-link" : ""}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("experience")}>Experience</a>
+              <a
+                onClick={() => scrollToSection("experience")}
+                className={activeSection === "experience" ? "active-link" : ""}
+              >
+                Experience
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("projects")}>Projects</a>
+              <a
+                onClick={() => scrollToSection("projects")}
+                className={activeSection === "projects" ? "active-link" : ""}
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("skills")}>Skills</a>
+              <a
+                onClick={() => scrollToSection("skills")}
+                className={activeSection === "skills" ? "active-link" : ""}
+              >
+                Skills
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection("contact")}>Contact</a>
+              <a
+                onClick={() => scrollToSection("contact")}
+                className={activeSection === "contact" ? "active-link" : ""}
+              >
+                Contact
+              </a>
             </li>
           </ul>
 
