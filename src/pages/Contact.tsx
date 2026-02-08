@@ -6,8 +6,7 @@ const Contact = () => {
       <div className="container contact-wrapper">
         <h2 className="page-title">Get In Touch</h2>
         <p className="contact-lead">
-          I'm currently open to new opportunities, freelance projects, and
-          collaborations.
+          Let's Connect, freelance projects, and collaborations.
         </p>
 
         <div className="contact-cards-row">
