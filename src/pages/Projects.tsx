@@ -57,6 +57,9 @@ const Projects = () => {
                 <span style={{ borderColor: "rgba(220,38,38,0.3)" }}>
                   Python
                 </span>
+                <span style={{ borderColor: "rgba(220,38,38,0.3)" }}>
+                  Vercel
+                </span>
               </div>
 
               {/* Details always visible */}
@@ -102,6 +105,24 @@ const Projects = () => {
                     distribution.
                   </li>
                 </ul>
+                <div className="project-links">
+                  <a
+                    href="https://ethioimpostor.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-game"
+                  >
+                    Play Online <FaExternalLinkAlt />
+                  </a>
+                  <a
+                    href="https://github.com/GetayawkalGirma/my-app-releases/releases/tag/v20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-game btn-game-blue"
+                  >
+                    Download APK <FaExternalLinkAlt />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -202,15 +223,12 @@ const Projects = () => {
                   </li>
                 </ul>
 
-                <div
-                  className="project-links"
-                  style={{ marginTop: "1rem", display: "flex", gap: "10px" }}
-                >
+                <div className="project-links">
                   <a
                     href="https://youtu.be/AKWvGY56u2U"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="link-btn"
+                    className="btn-game btn-game-green"
                   >
                     Watch Demo <FaExternalLinkAlt />
                   </a>
@@ -219,9 +237,9 @@ const Projects = () => {
                     href="https://github.com/GetayawkalGirma/my-app-releases/releases/tag/v20"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="link-btn"
+                    className="btn-game btn-game-blue"
                   >
-                    Download <FaExternalLinkAlt />
+                    Download APK <FaExternalLinkAlt />
                   </a>
                 </div>
               </div>

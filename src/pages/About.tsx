@@ -21,8 +21,8 @@ const About = () => {
           <p className="hero-description animate-blur-in delay-200">
             I’m a full-stack developer passionate about building scalable,
             high-performance applications and AI-powered systems. I enjoy
-            spotting gaps and inefficiencies in workflows and designing software
-            solutions that simplify complex operations.
+            spotting gaps and inefficiencies and designing software solutions
+            that simplify complex operations.
           </p>
 
           <div className="social-links animate-blur-in delay-300">
