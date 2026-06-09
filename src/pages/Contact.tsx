@@ -51,11 +51,11 @@ const Contact = () => {
         <form className="simple-form">
           <div className="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="John Doe" />
+            <input type="text" placeholder=" Mr..." />
           </div>
           <div className="form-group">
             <label>Email Address</label>
-            <input type="email" placeholder="john@example.com" />
+            <input type="email" placeholder="name@example.com" />
           </div>
           <div className="form-group">
             <label>Message</label>
