@@ -1,4 +1,4 @@
-import cvFile from "../assets/Cv getayawkal.pdf";
+import cvFile from "../assets/Getayawkal_Girma_CV.pdf";
 import {
   FaGithub,
   FaLinkedin,

@@ -6,7 +6,7 @@ const projects = [
   {
     id: "zdish",
     logo: null,
-    logoInitials: "ZD",
+    logoInitials: "Z",
     accentHex: "#6366f1",
     accentRgb: "99, 102, 241",
     title: "ZDish",
@@ -19,18 +19,19 @@ const projects = [
       "Prisma ORM",
       "Docker",
       "LLMs",
+      "Vercel",
+      "supabase",
     ],
     bullets: [
       "Architected a 4-layer clean architecture (Actions → Services → Repositories → DB) following Domain-Driven Design, with a multi-file Prisma ORM schema isolating four data domains.",
-      "Containerized the development environment with Docker, enabling fully reproducible local setup and consistent behaviour across machines without manual configuration.",
       "Implemented tag-based cache invalidation (revalidateTag) with deterministic rules per domain, ensuring predictable and testable cache state transitions across the application.",
-      "Integrated LLM-powered workflows for menu content enrichment, categorization, and data quality improvements across 667+ active items.",
+      "Integrated LLM-powered workflows for menu content enrichment, categorization, and data quality improvements across 667+ active items. ( easly populate menu items by taking a photo of restaurant menu)",
       "Authored structured technical documentation covering architecture decisions, domain boundaries, and data flow for independent contributor onboarding.",
     ],
     links: [
       {
         label: "Live Demo",
-        href: "https://z-menu-neax.vercel.app/",
+        href: "https://zdish.vercel.app/search",
         style: "primary",
       },
       {
