@@ -116,41 +116,69 @@ const About = () => {
             <div className="timeline-item expandable-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <span className="timeline-date">Oct 2025 – Present</span>
-                <h3>Lead ERP Developer</h3>
+                <span className="timeline-date">Oct 2024 – Present</span>
+                <h3>Full Stack Developer</h3>
                 <h4>Habtech Solutions</h4>
                 <div className="experience-tags">
                   <span>Python</span>
-                  <span>JavaScript</span>
+                  <span>Next.js</span>
                   <span>Frappe Framework</span>
+                  <span>PostgreSQL</span>
+                  <span>Docker</span>
                 </div>
                 <p className="summary-text">
-                  Leading the CPMS implementation for the Ministry of Health,
-                  architecting modules for large-scale construction management.
+                  Leading full-stack delivery across two production systems: a
+                  government-facing construction management platform and a
+                  research data platform with LMS, file management, and dynamic
+                  forms.
                 </p>
 
                 <div className="expanded-details">
                   <ul>
                     <li>
-                      Led the end-to-end design and implementation of a
-                      Construction Project Management System (CPMS) for the
-                      Ministry of Health (MOH) using the Frappe framework.
+                      Led end-to-end design and delivery of a Construction
+                      Project Management System (CPMS) for Ethiopia's Ministry
+                      of Health — architecting a multi-module Frappe application
+                      with clearly separated concerns across backend services,
+                      REST APIs, and UI components.
                     </li>
                     <li>
-                      Architected and customized ERPNext modules to deliver a
-                      Primavera-style scheduling and project control system
-                      tailored for large-scale construction projects.
+                      Building a full-stack research data platform in Next.js
+                      and PostgreSQL, featuring an LMS, file management, secure
+                      download-request workflows with token-based link
+                      generation, and a dynamic form engine powered by SurveyJS.
                     </li>
                     <li>
-                      Contributed a bug fix to Frappe Insights (open-source) by
-                      resolving a permission validation issue where custom
-                      fields in child tables were not correctly included in
-                      access checks.
+                      Implemented role-based access control (RBAC) using
+                      BetterAuth — restricting Google OAuth login to specific
+                      user roles while supporting credential-based login for
+                      others.
                     </li>
                     <li>
-                      Worked across the full stack: Python (Frappe backend),
-                      REST APIs, and Frappe UI components for interactive
-                      dashboards and reports.
+                      Integrated ODK (Open Data Kit) for offline field data
+                      collection, building dashboards to surface submission
+                      statistics and enumerator activity from the ODK server.
+                    </li>
+                    <li>
+                      Hardened deliverables for production: Dockerized the
+                      application, deployed to a self-hosted server, and
+                      obfuscated/compiled the frontend bundle to protect
+                      proprietary source code.
+                    </li>
+                    <li>
+                      Contributed an open-source bug fix to Frappe Insights —
+                      identified, reproduced, and resolved a permission
+                      validation issue in child table access checks.
+                    </li>
+                    <li>
+                      Built and validated REST API endpoints with Postman
+                      collections, ensuring deterministic, reproducible
+                      behaviour across environments.
+                    </li>
+                    <li>
+                      Authored technical documentation for system modules to
+                      support handoff, onboarding, and long-term maintainability
+                      across a distributed team.
                     </li>
                   </ul>
                 </div>
@@ -301,7 +329,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       {/* Skills */}
       <section className="section">
         <div className="container">
@@ -315,29 +342,73 @@ const About = () => {
                 <span>JavaScript</span>
                 <span>C#</span>
                 <span>SQL</span>
+                <span>Node.js</span>
               </div>
             </div>
             <div className="skill-group">
-              <h4>Stack</h4>
+              <h4>Frameworks</h4>
               <div className="tags">
-                <span>.NET</span>
-                <span>Angular</span>
-                <span>FastAPI</span>
-                <span>Frappe</span>
-                <span>Ionic</span>
+                <span>Next.js</span>
                 <span>React</span>
                 <span>React Native</span>
+                <span>FastAPI</span>
+                <span>ASP.NET Core</span>
+                <span>Angular</span>
+                <span>Ionic</span>
+                <span>Frappe</span>
               </div>
             </div>
             <div className="skill-group">
-              <h4>Tools & DB</h4>
+              <h4>Databases</h4>
+              <div className="tags">
+                <span>PostgreSQL</span>
+                <span>MySQL</span>
+                <span>SQLite</span>
+                <span>MariaDB</span>
+                <span>Redis</span>
+              </div>
+            </div>
+            <div className="skill-group">
+              <h4>ORM & Validation</h4>
+              <div className="tags">
+                <span>Prisma ORM</span>
+                <span>Pydantic</span>
+                <span>Zod</span>
+              </div>
+            </div>
+            <div className="skill-group">
+              <h4>DevOps & Tools</h4>
               <div className="tags">
                 <span>Docker</span>
                 <span>Git</span>
-                <span>SQLite</span>
-                <span>PostgreSQL</span>
-                <span>Frappe</span>
-                <span>Erp Next</span>
+                <span>GitHub Actions</span>
+                <span>Nginx</span>
+                <span>Postman</span>
+                <span>Supabase</span>
+                <span>Vercel</span>
+                <span>Appwrite</span>
+              </div>
+            </div>
+            <div className="skill-group">
+              <h4>Auth & Security</h4>
+              <div className="tags">
+                <span>BetterAuth</span>
+                <span>OAuth 2.0</span>
+                <span>JWT</span>
+                <span>RBAC</span>
+              </div>
+            </div>
+            <div className="skill-group">
+              <h4>Practices</h4>
+              <div className="tags">
+                <span>Clean Architecture</span>
+                <span>Domain-Driven Design</span>
+                <span>REST API Design</span>
+                <span>SSR</span>
+                <span>TDD</span>
+                <span>CI/CD</span>
+                <span>Technical Documentation</span>
+                <span>Open-Source Contribution</span>
               </div>
             </div>
           </div>
